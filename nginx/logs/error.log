@@ -1,0 +1,167 @@
+2025/06/05 20:38:23 [notice] 14196#8688: signal process started
+2025/06/05 20:38:43 [notice] 5532#10084: signal process started
+2025/06/05 20:39:21 [notice] 15072#8016: signal process started
+2025/06/05 20:39:30 [error] 7216#2024: *12 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:39:32 [error] 7216#2024: *12 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:39:32 [error] 7216#2024: *13 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/main.html"
+2025/06/05 20:40:07 [error] 7216#2024: *13 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:40:12 [notice] 2688#1600: signal process started
+2025/06/05 20:40:14 [error] 7216#2024: *15 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:40:18 [error] 7636#15668: *16 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:40:18 [error] 7636#15668: *17 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/main.html"
+2025/06/05 20:40:58 [notice] 14932#6196: signal process started
+2025/06/05 20:42:52 [notice] 6136#9152: signal process started
+2025/06/05 20:42:58 [notice] 3652#8880: signal process started
+2025/06/05 20:43:55 [emerg] 11740#2768: "server" directive is not allowed here in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:1
+2025/06/05 20:44:08 [notice] 14496#13268: signal process started
+2025/06/05 20:49:19 [notice] 14540#2984: signal process started
+2025/06/05 20:51:43 [notice] 9192#8008: signal process started
+2025/06/05 20:54:24 [emerg] 2432#1272: CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/mime.types" failed (2: The system cannot find the file specified) in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:7
+2025/06/05 20:55:22 [notice] 1600#1368: signal process started
+2025/06/05 20:55:35 [error] 8008#3840: *12 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:55:36 [error] 8008#3840: *13 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/"
+2025/06/05 20:56:57 [notice] 8168#10760: signal process started
+2025/06/05 20:57:26 [notice] 7476#12492: signal process started
+2025/06/05 20:57:33 [error] 9376#9412: *22 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:57:34 [error] 9376#9412: *22 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:57:35 [error] 9376#9412: *22 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/game.html"
+2025/06/05 20:57:37 [error] 9376#9412: *22 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:57:38 [error] 9376#9412: *25 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/game.html"
+2025/06/05 20:58:12 [notice] 13324#13480: signal process started
+2025/06/05 20:58:47 [notice] 7664#2416: signal process started
+2025/06/05 20:59:11 [notice] 2704#6988: signal process started
+2025/06/05 20:59:19 [notice] 8008#11896: signal process started
+2025/06/05 20:59:19 [error] 8008#11896: CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2025/06/05 20:59:39 [error] 10784#7932: *1 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:59:41 [error] 10784#7932: *1 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/05 20:59:42 [error] 10784#7932: *3 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/main.html"
+2025/06/05 21:02:49 [notice] 16144#5880: signal process started
+2025/06/06 15:28:20 [notice] 13884#10536: signal process started
+2025/06/06 15:28:33 [error] 6052#6596: *3 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:28:35 [error] 6052#6596: *3 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:28:36 [error] 6052#6596: *3 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/"
+2025/06/06 15:29:35 [notice] 6812#14416: signal process started
+2025/06/06 15:29:37 [notice] 1308#7692: signal process started
+2025/06/06 15:29:48 [error] 17260#1952: *8 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:29:50 [error] 17260#1952: *8 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: base.com, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:29:50 [error] 17260#1952: *10 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/main.html"
+2025/06/06 15:30:09 [notice] 15972#14912: signal process started
+2025/06/06 15:45:43 [emerg] 10780#12428: invalid return code "Hello" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:17
+2025/06/06 15:45:47 [emerg] 16076#3040: invalid return code "Hello" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:17
+2025/06/06 15:46:34 [emerg] 10832#17340: unexpected "'" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:17
+2025/06/06 15:46:44 [notice] 1628#2364: signal process started
+2025/06/06 15:46:54 [error] 9616#11124: *20 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/main" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /main HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:47:30 [notice] 8264#10376: signal process started
+2025/06/06 15:47:32 [error] 9616#11124: *21 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/main" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /main HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:47:33 [error] 9616#11124: *22 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/main" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /main HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:48:04 [emerg] 9300#12172: duplicate location "/main" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:20
+2025/06/06 15:48:28 [notice] 14044#15684: signal process started
+2025/06/06 15:49:08 [error] 11800#17280: *25 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/1" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /1 HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:49:12 [notice] 7312#11032: signal process started
+2025/06/06 15:49:14 [error] 11800#17280: *26 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/1" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /1 HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:49:15 [error] 11800#17280: *27 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/1" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /1 HTTP/1.1", host: "localhost:8070"
+2025/06/06 15:49:50 [notice] 6772#17188: signal process started
+2025/06/06 15:50:17 [emerg] 14264#16424: duplicate location "/12" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:20
+2025/06/06 15:50:25 [notice] 14024#12460: signal process started
+2025/06/06 15:51:13 [notice] 15992#2336: signal process started
+2025/06/06 15:52:59 [emerg] 12672#13200: duplicate location "/123" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:32
+2025/06/06 15:53:15 [notice] 7732#11032: signal process started
+2025/06/06 15:53:30 [notice] 14816#10396: signal process started
+2025/06/06 15:54:25 [notice] 10456#4292: signal process started
+2025/06/06 15:54:57 [notice] 16360#15992: signal process started
+2025/06/06 15:55:50 [notice] 5380#6724: signal process started
+2025/06/06 15:56:52 [emerg] 4832#14004: duplicate location "/1" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:24
+2025/06/06 15:57:09 [notice] 11864#4644: signal process started
+2025/06/06 15:58:20 [emerg] 9840#10840: unknown directive "4}" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:36
+2025/06/06 15:58:29 [emerg] 1888#16840: unknown directive "4}" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:36
+2025/06/06 15:58:36 [emerg] 15932#7728: unknown directive "4," in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:36
+2025/06/06 15:58:56 [notice] 15900#6724: signal process started
+2025/06/06 15:59:29 [notice] 14344#13392: signal process started
+2025/06/06 15:59:50 [notice] 13420#13740: signal process started
+2025/06/06 16:01:00 [emerg] 13064#6372: invalid location modifier "*~" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:36
+2025/06/06 16:01:10 [notice] 11512#16140: signal process started
+2025/06/06 16:01:30 [notice] 12584#15604: signal process started
+2025/06/06 16:01:42 [notice] 9808#15644: signal process started
+2025/06/06 16:02:08 [notice] 13272#16368: signal process started
+2025/06/06 16:02:34 [error] 6676#5216: *100 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/bbb" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /bbb HTTP/1.1", host: "localhost:8070"
+2025/06/06 16:03:33 [notice] 12996#11252: signal process started
+2025/06/06 16:03:35 [error] 12304#12888: *112 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/bbbA" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /bbbA HTTP/1.1", host: "localhost:8070"
+2025/06/06 16:03:52 [notice] 10420#15056: signal process started
+2025/06/06 16:03:52 [notice] 15636#7136: signal process started
+2025/06/06 16:04:48 [notice] 6308#12412: signal process started
+2025/06/06 16:04:48 [notice] 14548#15212: signal process started
+2025/06/06 16:04:49 [notice] 936#7752: signal process started
+2025/06/06 16:04:50 [notice] 15820#15064: signal process started
+2025/06/06 16:05:13 [error] 2524#16448: *139 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/bbbb" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /bbbb HTTP/1.1", host: "localhost:8070"
+2025/06/06 16:05:29 [error] 2524#16448: *139 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/bbbb" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /bbbb HTTP/1.1", host: "localhost:8070"
+2025/06/06 16:05:34 [notice] 10476#10468: signal process started
+2025/06/06 16:05:35 [error] 2524#16448: *140 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/bbbb" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /bbbb HTTP/1.1", host: "localhost:8070"
+2025/06/06 16:05:37 [error] 2524#16448: *141 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/bbbb" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /bbbb HTTP/1.1", host: "localhost:8070"
+2025/06/06 16:06:16 [notice] 8884#3576: signal process started
+2025/06/06 16:07:47 [emerg] 16372#15984: unknown directive "reutrn" in D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development\nginx/conf/nginx.conf:45
+2025/06/06 16:08:00 [notice] 17068#11356: signal process started
+2025/06/06 16:08:08 [notice] 6448#12544: signal process started
+2025/06/06 16:08:59 [notice] 1308#13760: signal process started
+2025/06/06 16:13:40 [notice] 9372#8572: signal process started
+2025/06/06 16:14:23 [notice] 15392#11068: signal process started
+2025/06/06 16:15:06 [notice] 16140#14792: signal process started
+2025/06/06 16:15:17 [notice] 10524#14196: signal process started
+2025/06/06 16:15:34 [notice] 6416#244: signal process started
+2025/06/06 16:16:08 [notice] 10376#16508: signal process started
+2025/06/06 16:16:09 [notice] 656#7220: signal process started
+2025/06/06 16:16:09 [notice] 404#4180: signal process started
+2025/06/06 16:17:04 [notice] 6436#7496: signal process started
+2025/06/06 16:17:27 [notice] 7584#8628: signal process started
+2025/06/06 16:17:28 [notice] 16836#16908: signal process started
+2025/06/06 16:17:29 [notice] 13168#12520: signal process started
+2025/06/06 16:18:39 [notice] 7524#692: signal process started
+2025/06/06 16:18:54 [notice] 13084#16960: signal process started
+2025/06/06 16:19:34 [notice] 3588#16232: signal process started
+2025/06/06 16:19:58 [notice] 13220#6152: signal process started
+2025/06/06 16:20:10 [notice] 4180#16368: signal process started
+2025/06/06 16:20:26 [notice] 12844#4120: signal process started
+2025/06/06 16:20:26 [notice] 14248#8052: signal process started
+2025/06/06 16:20:27 [notice] 12088#1200: signal process started
+2025/06/06 16:21:26 [notice] 1356#6492: signal process started
+2025/06/06 16:22:36 [notice] 11948#15824: signal process started
+2025/06/06 16:22:47 [notice] 8608#6788: signal process started
+2025/06/06 16:22:57 [notice] 2824#4836: signal process started
+2025/06/06 16:26:19 [notice] 13200#16520: signal process started
+2025/06/06 16:26:20 [notice] 6796#4180: signal process started
+2025/06/06 16:26:20 [notice] 404#9376: signal process started
+2025/06/06 16:26:50 [notice] 15424#13740: signal process started
+2025/06/06 16:26:51 [notice] 11588#9868: signal process started
+2025/06/06 16:26:52 [notice] 6172#14928: signal process started
+2025/06/06 16:27:38 [notice] 5680#9872: signal process started
+2025/06/06 16:27:39 [notice] 11196#16756: signal process started
+2025/06/06 16:27:39 [notice] 11532#12416: signal process started
+2025/06/06 16:27:59 [notice] 15036#4644: signal process started
+2025/06/06 16:35:14 [notice] 11892#2024: signal process started
+2025/06/06 16:35:29 [notice] 10324#13372: signal process started
+2025/06/06 16:35:49 [notice] 16844#8452: signal process started
+2025/06/06 16:38:26 [notice] 13760#16328: signal process started
+2025/06/07 10:16:52 [notice] 15764#14684: signal process started
+2025/06/07 10:19:32 [notice] 16736#9600: signal process started
+2025/06/07 10:19:33 [notice] 16572#7796: signal process started
+2025/06/07 10:19:34 [notice] 7452#8004: signal process started
+2025/06/07 10:19:50 [notice] 3040#13296: signal process started
+2025/06/07 10:19:53 [error] 4644#10156: *16 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8070", referrer: "http://localhost:8070/"
+2025/06/07 10:20:47 [notice] 7696#17324: signal process started
+2025/06/07 10:21:05 [notice] 2824#7772: signal process started
+2025/06/07 10:21:18 [notice] 11424#7688: signal process started
+2025/06/07 10:22:05 [notice] 4664#9560: signal process started
+2025/06/07 10:22:28 [notice] 6052#5776: signal process started
+2025/06/07 10:26:58 [notice] 13720#2824: signal process started
+2025/06/07 10:27:04 [error] 11892#12464: *33 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/06/07 10:32:21 [error] 11892#12464: *42 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2025/06/07 10:39:06 [notice] 2156#2428: signal process started
+2025/06/07 11:41:15 [notice] 5712#6988: signal process started
+2025/06/09 23:12:23 [error] 6060#9588: *2 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2025/06/09 23:12:38 [error] 6060#9588: *6 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.0.11, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "192.168.0.11", referrer: "http://192.168.0.11/"
+2025/06/09 23:13:55 [error] 6060#9588: *8 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.56.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "192.168.56.1", referrer: "http://192.168.56.1/"
+2025/06/09 23:27:34 [notice] 8612#1484: signal process started
+2025/06/09 23:29:08 [error] 6212#10416: *8 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.0.13, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "192.168.0.11", referrer: "http://192.168.0.11/"
+2025/06/09 23:42:12 [notice] 2512#11168: signal process started
+2025/06/09 23:42:26 [error] 10108#8136: *11 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.56.1, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "192.168.56.1:8089", referrer: "http://192.168.56.1:8089/"
+2025/06/09 23:43:59 [error] 10108#8136: *16 CreateFile() "D:\my\google_drive\singles\folders\Projects\Frontend\WEB-development/favicon.ico" failed (2: The system cannot find the file specified), client: 178.178.197.228, server: base.com, request: "GET /favicon.ico HTTP/1.1", host: "95.37.199.154:8089", referrer: "http://95.37.199.154:8089/"
+2025/06/09 23:45:32 [notice] 1244#3180: signal process started
