@@ -1,0 +1,71 @@
+# Git
+.git
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.python-version
+.env
+.venv
+venv
+env
+ENV
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache
+.tox
+.coverage
+.coverage.*
+htmlcov
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.mypy_cache
+.dmypy.json
+dmypy.json
+.pyre
+.pytype
+.hypothesis
+*.egg-info
+dist
+build
+*.egg
+MANIFEST
+.pip
+.poetry
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Данные, если они не нужны в образе (подставьте свои пути)
+data/
+input/
+output/
+*.csv
+*.parquet
+*.json
+
+# Тесты и временные файлы
+tests/
+test_*.py
+test_*
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
