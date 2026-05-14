@@ -1,4 +1,13 @@
 
+@font-face {
+    font-family: 'MyFont';
+    src: 
+        url('/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf') format('ttf'),
+        url('/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
 html {
   scrollbar-width: none;
 }
@@ -134,5 +143,6 @@ p {
   font-size: 16px;
   display: flex;
   height: 200px;
-  justify-content:space-around;
+  color: aliceblue;
+  justify-content: space-around;
 }

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Виды змей{% endblock %}
+
+{% block styles %}
+<link href="{{ url_for('static', path='css/list_type_snakes.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div id="app" class="content">
+    <div class="main_block">
+        <div class="title">
+            <h1>Виды змей и не только </h1>
+        </div>
+        <div class="cards">
+            {% for el in notes %}
+                <div class="card">
+                    <img src="{{ url_for('static', path=el.image) }}" alt="type_snake">
+                    <div class="title_card">
+                        <h2>{{ el.title }}</h2>
+                    </div>
+                    <div class="text_card">
+                        <p>
+                            {{ el.description }}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+            <form action="/add_note" method="post">
+                <div class="card">
+                    <input type="hidden" name="image" value="image/kotik.jpg">
+                    <div class="title_card">
+                        <h2>Сделай новую карточку!</h2>
+                    </div>
+                    <div class="title_card">
+                        <h2><input type="text" name="title" placeholder="Название" required></h2>
+                    </div>
+                    <div class="title_card">
+                        <p>
+                            <textarea name="description" placeholder="Описание"></textarea>
+                        </p>
+                    </div>
+                    <button type="submit" class="add-button">➕ Добавить карточку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

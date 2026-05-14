@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Обратная связь{% endblock %}
+
+{% block styles %}
+<link href="{{ url_for('static', path='css/feedback.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="main_block">
+        <div class="form_block">
+            <H1>Форма обратной связи</H1>
+            <form>
+                <label for="email">Почта для ответа:</label>
+                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                
+                <label for="feedback">Ваше сообщение:</label>
+                <textarea id="feedback" name="text_feedback" placeholder="Напишите ваше сообщение здесь..." required></textarea>
+                
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
