@@ -133,7 +133,7 @@ class NoOrmNoteDao:
 
     def delete(self, pk: int) -> None:
         stmt = sqlalchemy.text('DELETE FROM "NoteModel" WHERE id_model = :pk')
-        self.connection.execute(stmt, {"pk": pk})
+        self.connection.execute(stmt, {'pk': pk})
         self.connection.commit()
 
     def delete_all(self) -> None:
