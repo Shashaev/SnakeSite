@@ -14,4 +14,6 @@ WORKDIR /app
 COPY --from=stage1 /root/.local /root/.local
 COPY src src
 
+ENV PATH="/root/.local/bin:$PATH"
+
 CMD [ "uv", "run", "-m", "src.main" ]
