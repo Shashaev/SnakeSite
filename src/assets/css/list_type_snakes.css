@@ -1,0 +1,153 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+}
+
+.content {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #FEFAE0;
+}
+
+.main_block {
+    width: 85vw;
+    padding-top: 40px;
+}
+
+.footer {
+    margin: 0px;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: #141A20;
+    font-size: 16px;
+    display: flex;
+    height: 200px;
+    color: aliceblue;
+    justify-content:space-around;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+img {
+    width: 90%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card > img {
+    margin-bottom: 30px;
+}
+
+.title_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #E9EDC9;
+    margin-bottom: 30px;
+}
+
+.text_card {
+    width: 90%;
+    background-color: #E9EDC9;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.text_card > p {
+    width: 90%;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.title {
+    height: 120px;
+    background-color: #FAEDCD;
+    border-style: solid;
+    border-color: #D4A373;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-width: 1px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CCD5AE;
+    width: 80%;
+    border-radius: 50px;
+    padding-top: 70px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    padding-left: 85px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        margin-bottom: 80px;
+    }
+}
+
+.main_button {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-color: #D4A373;
+    border-width: 1px;
+    background-color: #FAEDCD;
+}
+
+.dis_btn {
+    background-color: #FEFAE0;
+}
+
+.end {
+    background-color: #FAEDCD;
+    height: 80px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}

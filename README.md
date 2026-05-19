@@ -1,22 +1,29 @@
-# SnakeSite
+# test_app
 
-Pet-проект в области фронтенда — сайт про змей.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Запуск проекта
+## Recommended IDE Setup
 
-Запуск проекта через Docker:
-```bash
-sudo docker run -p 8000:8000 shashaevkirill/snakesite
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
 
-После запуска откроется сайт будет доступен по [ссылке](http://localhost:8000/).
+### Compile and Hot-Reload for Development
 
-## Конфигурация
+```sh
+npm run dev
+```
 
-Конфигурация производится через параметры окружения, их можно указать в файле `.env`. `.env.example` — пример заполнения `.env`. Параметры и их смысл:
-- `API_USE_POSTGRESQL=True`: если `true` будет использовать postgresql бада данных (далее действуют настройки этой базы), иначе будет использоваться sqlite (далее действую настройки для sqlite)
-- `API_DB_PATH=database.db`: настройка для sqlite, путь где будет храниться бд
-- `API_DB_USER=postgres`: настройка для postgresql, имя пользователя
-- `API_DB_PASSWORD=example`: настройка для postgresql, пароль пользователя
-- `API_DB_NAME=snakesite`: настройка для postgresql, название используемой БД
-- `USE_MOCK_DATA=True`: если `true`, то БД будет заполнена тестовыми данными (рекомендуется для просмотра)
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
