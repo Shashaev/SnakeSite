@@ -1,7 +1,7 @@
 
 <template>
     <div class="footer">
-        <div class="about_company">©️ 2025 Discourse Inc: все права защищены</div>
+        <div class="about_company">©️ 2026 Discourse Inc: все права защищены</div>
         <div class="links_site">
             <p>Ссылки:</p>
             <RouterLink to="/">Главная страница</RouterLink>
