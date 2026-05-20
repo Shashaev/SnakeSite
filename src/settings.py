@@ -19,9 +19,7 @@ USE_POSTGRESQL = is_bool(os.getenv('API_USE_POSTGRESQL', 'False'))
 PATH_DB = os.getenv('API_DB_PATH', 'database.db')
 DB_USER = os.getenv('API_DB_USER', 'postgres')
 DB_PASSWORD = os.getenv('API_DB_PASSWORD', 'example')
-# DB_HOST = os.getenv('API_DB_HOST', 'db')
 DB_HOST = 'db'
-# DB_PORT = os.getenv('API_DB_PORT', '5432')
 DB_PORT = '5432'
 DB_NAME = os.getenv('API_DB_NAME', 'snakesite')
 
@@ -35,3 +33,8 @@ else:
     )
 
 USE_MOCK_DATA = is_bool(os.getenv('API_USE_MOCK_DATA', 'True'))
+
+SECRET_KEY = os.getenv('API_JWT_SECRET_KEY', 'example')
+ALGORITHM_FOR_HASH = 'HS256'
+JWT_EXT_DAY = int(os.getenv('API_JWT_EXT_DAY', '30'))
+JWT_EXT_SECONDS = JWT_EXT_DAY * 24 * 60 * 60

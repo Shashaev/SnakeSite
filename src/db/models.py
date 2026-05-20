@@ -50,7 +50,8 @@ class GameModel(ModelWithPK):
 class UserModel(ModelWithPK):
     __tablename__ = 'UserModel'
 
-    ip: orm.Mapped[str] = orm.mapped_column(unique=True)
+    name: orm.Mapped[str] = orm.mapped_column(unique=True)
+    password: orm.Mapped[bytes]
     games: orm.Mapped[list[GameModel] | None] = orm.relationship(
         back_populates='user',
     )

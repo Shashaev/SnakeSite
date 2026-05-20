@@ -1,3 +1,4 @@
+import src.auth
 import src.db.dao
 import src.db.db
 import src.db.models
@@ -16,7 +17,7 @@ DATA = [
             'гадюк — вертикальные. Окрас серо-коричневый, кроме фрагментов '
             'медного окраса на голове.'
         ),
-        'image': 'image/медянка.jpg',
+        'image': 'data/медянка.jpg',
     },
     {
         'title': 'Обыкновенный уж',
@@ -31,7 +32,7 @@ DATA = [
             'дневное время, ночью они скрываются в дуплах, лесной подстилке, '
             'норах грызунов.'
         ),
-        'image': 'image/Уж обыкновенный.jpg',
+        'image': 'data/Уж обыкновенный.jpg',
     },
     {
         'title': 'Гадюка обыкновенная',
@@ -45,7 +46,7 @@ DATA = [
             'вырубки. Зимует в норах грызунов или корнях деревьев, часто '
             'группами.'
         ),
-        'image': 'image/kotik.jpg',
+        'image': 'data/kotik.jpg',
     },
     {
         'title': 'Полоз узорчатый',
@@ -58,7 +59,7 @@ DATA = [
             'клубок, шипит и вибрирует хвостом. Распространён в южных '
             'регионах Европы и в Азии.'
         ),
-        'image': 'image/kotik.jpg',
+        'image': 'data/kotik.jpg',
     },
     {
         'title': 'Королевская кобра',
@@ -70,7 +71,7 @@ DATA = [
             'кобра избегает встреч с человеком и при возможности '
             'предупреждает угрожающим капюшоном и шипением.'
         ),
-        'image': 'image/kotik.jpg',
+        'image': 'data/kotik.jpg',
     },
     {
         'title': 'Питон сетчатый',
@@ -82,7 +83,7 @@ DATA = [
             'иногда домашними животными). Отлично плавает. Может заглатывать '
             'жертву целиком, растягивая пасть с помощью подвижных челюстей.'
         ),
-        'image': 'image/kotik.jpg',
+        'image': 'data/kotik.jpg',
     },
     {
         'title': 'Гремучая змея (каскавела)',
@@ -95,7 +96,7 @@ DATA = [
             'Охотится из засады на грызунов. При опасности предупреждает '
             'шумом, прежде чем укусить.'
         ),
-        'image': 'image/kotik.jpg',
+        'image': 'data/kotik.jpg',
     },
 ]
 
@@ -103,10 +104,13 @@ DATA = [
 def mock_data() -> None:
     user_dao = src.db.dao.UserDAO(next(src.db.db.get_db()))
     first_user = user_dao.select(1)
-    if first_user is not None and first_user.ip == 'test ip':
+    if first_user is not None and first_user.name == 'Example':
         return
 
-    user_dao.create(src.db.models.UserModel(ip='test ip'))
+    user_dao.create(src.db.models.UserModel(
+        name='Example',
+        password=src.auth.hash_password('Example' * 10),
+    ))
     note_dao = src.db.dao.NoteDAO(next(src.db.db.get_db()))
     for note in DATA:
         note_dao.create(src.db.models.NoteModel(
