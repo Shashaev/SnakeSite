@@ -59,14 +59,12 @@ function getCherry () {
         
         if (pole[y][x] == 0) {
             position = [y, x]
-            console.log(y, x)
             return position
         }
 
         count++
 
         if (count == 10 ** 8) {
-            console.log('Break loop')
             return false
         }
     }
@@ -134,10 +132,8 @@ function stap () {
     }
 
     if ((newPositionHead[0] == positionCherry[0]) && (newPositionHead[1] == positionCherry[1])) {
-        console.log('Ты её съел!!!')
         pole[positionCherry[0]][positionCherry[1]] = 0
         positionCherry = getCherry()
-        console.log(positionCherry)
         if (positionCherry) {
             pole[positionCherry[0]][positionCherry[1]] = 3
         } else {
@@ -156,12 +152,9 @@ function mainLoop () {
     const exit = stap()
     const game_pol = document.body.getElementsByClassName('game')[0]
 
-    console.log(game_pol)
-
     if (exit) {
         if (exit == 'WIN') game_pol.innerHTML = rendersWindowWin
         else game_pol.innerHTML = rendersWindowLose
-        console.log('YOU ' + exit)
         return
     }
 
