@@ -1,29 +1,19 @@
-# test_app
+# SnakeSite
 
-This template should help get you started developing with Vue 3 in Vite.
+Pet-проект в области фронтенда — сайт про змей.
 
-## Recommended IDE Setup
+## Запуск проекта
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Запуск всего проекта через Docker
 
-## Customize configuration
+```bash
+docker compose up
+```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Локальный запуск (фронтенд часть)
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
 npm run build
 ```
