@@ -3,6 +3,8 @@ import IndexView from '../views/IndexView.vue'
 import FeedbackView from '@/views/FeedbackView.vue'
 import GameView from '@/views/GameView.vue'
 import TypesSnakeView from '@/views/TypesSnakesView.vue'
+import Profile from '@/views/Profile.vue'
+import LeaderBoard from '@/views/LeaderBoard.vue'
 
 
 const router = createRouter({
@@ -27,6 +29,16 @@ const router = createRouter({
       path: '/game',
       name: 'game',
       component: GameView,
+    },
+    {
+      path: '/auth',
+      name: 'auth',
+      component: Profile,
+    },
+    {
+      path: '/leaderboard',
+      name: 'leaderboard',
+      component: LeaderBoard,
     },
   ],
 })

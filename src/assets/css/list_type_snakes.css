@@ -151,3 +151,93 @@ h2 {
     align-items: center;
     border-radius: 25px;
 }
+
+.card-form__image {
+    width: 90%;
+    margin-bottom: 30px;
+    background-color: #e0e4c9;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+}
+
+.img-input {
+    width: 90%;
+    padding: 12px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #D4A373;
+    border-radius: 20px;
+    background-color: #FEFAE0;
+    color: #000;
+    text-align: center;
+}
+
+.title-input {
+    width: 90%;
+    padding: 8px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    border: none;
+    background: transparent;
+    text-align: center;
+}
+
+.description-textarea {
+    width: 90%;
+    padding: 10px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #E9EDC9;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.add-button {
+    margin: 20px 0 40px;
+    padding: 12px 24px;
+    background-color: #FAEDCD;
+    border: 1px solid #D4A373;
+    border-radius: 40px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-button:hover {
+    background-color: #D4A373;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .card-form {
+        padding-top: 30px;
+    }
+    .img-input, .title-input, .description-textarea {
+        font-size: 0.9rem;
+    }
+    .title-input {
+        font-size: 1.2rem;
+    }
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.title_card .title-input {
+    width: 90%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.text_card .description-textarea {
+    width: 90%;
+    min-height: 120px;
+}

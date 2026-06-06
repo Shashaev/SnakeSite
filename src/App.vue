@@ -6,9 +6,11 @@
 
 <template>
   <HeaderCom />
-  <transition name="fade" mode="out-in">
-    <RouterView />
-  </transition>
+  <RouterView v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </RouterView>
   <FooterCom />
 </template>
 

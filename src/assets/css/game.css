@@ -104,5 +104,10 @@ img {
 .game {
     width: 300px;
     padding-top: 110px;
-    padding-left: 105px;
+    padding-left: 102px;
+}
+
+.grid > div {
+    margin-bottom: 0px;
+    margin-right: 5px;
 }

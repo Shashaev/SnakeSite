@@ -8,7 +8,11 @@
             <br>
             <RouterLink to="/game">Игра про змею</RouterLink>
             <br>
+            <RouterLink to="/leaderboard">Лидерборд</RouterLink>
+            <br>
             <RouterLink to="/types_snake">Виды змей</RouterLink>
+            <br>
+            <RouterLink to="/auth">Авторизация</RouterLink>
             <br>
             <RouterLink to="/feedback">Обратная связь</RouterLink>
         </div>

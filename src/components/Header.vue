@@ -1,10 +1,25 @@
 
+<script>
+    export default {
+        data() {
+            return {
+                isAuthenticated: (
+                    document.cookie
+                    .split(';')
+                    .some(cookie => cookie.trim().startsWith('session_id='))
+                ),
+            }
+        },
+    }
+</script>
+
 <template>
     <header>
         <RouterLink to="/">Главная страница</RouterLink>
         <RouterLink to="/game">Игра про змею</RouterLink>
+        <RouterLink to="/leaderboard">Лидерборд</RouterLink>
         <RouterLink to="/types_snake">Виды змей</RouterLink>
-        <RouterLink to="/feedback">Обратная связь</RouterLink>
+        <RouterLink to="/auth" v-if="!isAuthenticated">Авторизация</RouterLink>
     </header>
 </template>
 
