@@ -36,7 +36,7 @@ def registration(
 def authentication(
     response: fastapi.Response,
     data: src.schemes.UserData,
-    user_dao: src.db.dao.UserDAO = fastapi.Depends(src.db.dao.get_userdao), 
+    user_dao: src.db.dao.UserDAO = fastapi.Depends(src.db.dao.get_userdao),
 ) -> src.schemes.StatusOk:
     user = user_dao.select_by_user_name(data.username)
     if (
