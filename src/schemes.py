@@ -26,3 +26,8 @@ class Note(pydantic.BaseModel):
         strict=True,
     )
     is_user: bool
+
+
+class LeaderboardLine(pydantic.BaseModel):
+    username: str = pydantic.Field(min_length=1)
+    maxscore: int = pydantic.Field(ge=0)

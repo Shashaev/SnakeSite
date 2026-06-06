@@ -54,7 +54,7 @@ def get_token(session_id: str | None = fastapi.Cookie(default=None)) -> str:
 def get_current_user(
     token: str = fastapi.Depends(get_token),
     user_dao: src.db.dao.UserDAO = fastapi.Depends(src.db.dao.get_userdao),
-) -> src.db.models.UserModel | None:
+) -> src.db.models.UserModel:
     try:
         data = jwt.decode(
             token,
@@ -72,7 +72,14 @@ def get_current_user(
             detail='Токен не валиден',
         )
 
-    return user_dao.select(data['user_id'])
+    user = user_dao.select(data['user_id'])
+    if user is None:
+        raise fastapi.HTTPException(
+            status_code=http.HTTPStatus.UNAUTHORIZED,
+            detail='Токен не валиден',
+        )
+
+    return user
 
 
 def get_token_or_none(

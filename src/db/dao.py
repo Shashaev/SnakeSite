@@ -34,16 +34,16 @@ class BaseDAO[T: models.Base]:
         self.session.commit()
 
 
-class NoteDAO(BaseDAO):
-    model: type[models.NoteModel] = models.NoteModel
+class NoteDAO(BaseDAO[models.NoteModel]):
+    model = models.NoteModel
 
 
-class GameDAO(BaseDAO):
-    model: type[models.GameModel] = models.GameModel
+class GameDAO(BaseDAO[models.GameModel]):
+    model = models.GameModel
 
 
-class UserDAO(BaseDAO):
-    model: type[models.UserModel] = models.UserModel
+class UserDAO(BaseDAO[models.UserModel]):
+    model = models.UserModel
 
     def select_by_user_name(self, username: str) -> models.UserModel | None:
         return (
@@ -54,19 +54,13 @@ class UserDAO(BaseDAO):
         )
 
 
-def get_notedao(
-    session: orm.Session = fastapi.Depends(db.get_db),
-) -> NoteDAO:
+def get_notedao(session: orm.Session = fastapi.Depends(db.get_db)) -> NoteDAO:
     return NoteDAO(session)
 
 
-def get_gamedao(
-    session: orm.Session = fastapi.Depends(db.get_db),
-) -> GameDAO:
+def get_gamedao(session: orm.Session = fastapi.Depends(db.get_db)) -> GameDAO:
     return GameDAO(session)
 
 
-def get_userdao(
-    session: orm.Session = fastapi.Depends(db.get_db),
-) -> UserDAO:
+def get_userdao(session: orm.Session = fastapi.Depends(db.get_db)) -> UserDAO:
     return UserDAO(session)

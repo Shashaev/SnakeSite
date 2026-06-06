@@ -2,6 +2,7 @@ import contextlib
 import typing
 
 import fastapi
+import fastapi.staticfiles
 import uvicorn
 
 import src.api
@@ -28,6 +29,23 @@ app = fastapi.FastAPI(
 )
 
 app.include_router(src.api.router)
+
+app.mount(
+    src.settings.UPLOAD_PREFIX,
+    fastapi.staticfiles.StaticFiles(directory=src.settings.UPLOAD_DIR),
+    'uploads',
+)
+
+if src.settings.DEBUG:
+    import fastapi.middleware.cors
+
+    app.add_middleware(
+        fastapi.middleware.cors.CORSMiddleware,
+        allow_origins=["http://localhost:5173"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
 if __name__ == '__main__':
     uvicorn.run(

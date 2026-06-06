@@ -38,3 +38,10 @@ SECRET_KEY = os.getenv('API_JWT_SECRET_KEY', 'example')
 ALGORITHM_FOR_HASH = 'HS256'
 JWT_EXT_DAY = int(os.getenv('API_JWT_EXT_DAY', '30'))
 JWT_EXT_SECONDS = JWT_EXT_DAY * 24 * 60 * 60
+
+DEBUG = is_bool(os.getenv('DEBUG', 'True'))
+
+UPLOAD_DIR = 'src/uploads'
+os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+UPLOAD_PREFIX = '/uploads'
