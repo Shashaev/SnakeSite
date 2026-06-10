@@ -4,7 +4,7 @@ services:
   front:
     build: .
     ports:
-      - "8080:80"
+      - "8088:80"
     depends_on:
       - api
 
@@ -12,8 +12,6 @@ services:
     image: shashaevkirill/snakesite
     ports:
       - "8000:8000"
-    env_file:
-      - .env
     volumes:
       - uploads_data:/app/uploads
 
