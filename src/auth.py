@@ -1,3 +1,4 @@
+import abc
 import datetime
 import http
 import typing
@@ -9,35 +10,6 @@ import jwt
 import src.db.dao
 import src.db.models
 import src.settings
-
-
-encoding_for_hash: str = 'UTF-8'
-
-
-def hash_password(password: str) -> bytes:
-    salt = bcrypt.gensalt()
-    return bcrypt.hashpw(
-        password.encode(encoding_for_hash),
-        salt,
-    )
-
-
-def check_password(password: str, hashed_password: bytes) -> bool:
-    return bcrypt.checkpw(
-        password.encode(encoding_for_hash),
-        hashed_password,
-    )
-
-
-def create_jwt_token(data: dict[str, typing.Any]) -> str:
-    now_date = datetime.datetime.now(datetime.timezone.utc)
-    data['iat'] = now_date
-    data['exp'] = now_date + datetime.timedelta(days=src.settings.JWT_EXT_DAY)
-    return jwt.encode(
-        data,
-        src.settings.SECRET_KEY,
-        src.settings.ALGORITHM_FOR_HASH,
-    )
 
 
 def get_token(session_id: str | None = fastapi.Cookie(default=None)) -> str:
@@ -109,3 +81,58 @@ def get_current_user_or_none(
         return None
 
     return user_dao.select(data['user_id'])
+
+
+class AuthServiceABC(abc.ABC):
+    @staticmethod
+    @abc.abstractmethod
+    def hash_password(password: str) -> bytes:
+        pass
+
+    @staticmethod
+    @abc.abstractmethod
+    def check_password(password: str, hashed_password: bytes) -> bool:
+        pass
+
+    @staticmethod
+    @abc.abstractmethod
+    def create_jwt_token(data: dict[str, typing.Any]) -> str:
+        pass
+
+
+ENCODING_FOR_HASH: typing.Final = 'UTF-8'
+
+
+class AuthService(AuthServiceABC):
+    @staticmethod
+    def hash_password(password: str) -> bytes:
+        salt = bcrypt.gensalt()
+        return bcrypt.hashpw(
+            password.encode(ENCODING_FOR_HASH),
+            salt,
+        )
+
+    @staticmethod
+    def check_password(password: str, hashed_password: bytes) -> bool:
+        return bcrypt.checkpw(
+            password.encode(ENCODING_FOR_HASH),
+            hashed_password,
+        )
+
+    @staticmethod
+    def create_jwt_token(data: dict[str, typing.Any]) -> str:
+        now_date = datetime.datetime.now(datetime.timezone.utc)
+        data['iat'] = now_date
+        data['exp'] = (
+            now_date
+            + datetime.timedelta(days=src.settings.JWT_EXT_DAY)
+        )
+        return jwt.encode(
+            data,
+            src.settings.SECRET_KEY,
+            src.settings.ALGORITHM_FOR_HASH,
+        )
+
+
+def get_auth_service() -> AuthServiceABC:
+    return AuthService()

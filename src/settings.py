@@ -1,4 +1,5 @@
 import os
+import typing
 
 import dotenv
 
@@ -14,34 +15,36 @@ def is_bool(string: str) -> bool:
     )
 
 
-USE_POSTGRESQL = is_bool(os.getenv('API_USE_POSTGRESQL', 'False'))
+USE_POSTGRESQL: typing.Final = is_bool(os.getenv(
+    'API_USE_POSTGRESQL',
+    'False',
+))
 
-PATH_DB = os.getenv('API_DB_PATH', 'database.db')
-DB_USER = os.getenv('API_DB_USER', 'postgres')
-DB_PASSWORD = os.getenv('API_DB_PASSWORD', 'example')
-DB_HOST = 'db'
-DB_PORT = '5432'
-DB_NAME = os.getenv('API_DB_NAME', 'snakesite')
+# PostgreSQL settings
+DB_USER: typing.Final = os.getenv('API_DB_USER', 'postgres')
+DB_PASSWORD: typing.Final = os.getenv('API_DB_PASSWORD', 'example')
+DB_HOST: typing.Final = 'db'
+DB_PORT: typing.Final = '5432'
+DB_NAME: typing.Final = os.getenv('API_DB_NAME', 'snakesite')
 
-if not USE_POSTGRESQL:
-    PATH_DB = 'database.db'
-    CONNECTION_STRING = f'sqlite:///{PATH_DB}'
-else:
-    CONNECTION_STRING = (
-        f'postgresql+asyncpg://{DB_USER}:'
-        f'{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
-    )
+# SQLite settings
+PATH_DB: typing.Final = os.getenv('API_DB_PATH', 'database.db')
 
-USE_MOCK_DATA = is_bool(os.getenv('API_USE_MOCK_DATA', 'True'))
+CONNECTION_STRING: typing.Final = (
+    f'postgresql+asyncpg://{DB_USER}:'
+    f'{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
+) if USE_POSTGRESQL else f'sqlite:///{PATH_DB}'
 
-SECRET_KEY = os.getenv('API_JWT_SECRET_KEY', 'example')
-ALGORITHM_FOR_HASH = 'HS256'
-JWT_EXT_DAY = int(os.getenv('API_JWT_EXT_DAY', '30'))
-JWT_EXT_SECONDS = JWT_EXT_DAY * 24 * 60 * 60
+USE_MOCK_DATA: typing.Final = is_bool(os.getenv('API_USE_MOCK_DATA', 'True'))
 
-DEBUG = is_bool(os.getenv('DEBUG', 'True'))
+SECRET_KEY: typing.Final = os.getenv('API_JWT_SECRET_KEY', 'example')
+ALGORITHM_FOR_HASH: typing.Final = 'HS256'
+JWT_EXT_DAY: typing.Final = int(os.getenv('API_JWT_EXT_DAY', '30'))
+JWT_EXT_SECONDS: typing.Final = JWT_EXT_DAY * 24 * 60 * 60
 
-UPLOAD_DIR = 'src/uploads'
+DEBUG: typing.Final = is_bool(os.getenv('DEBUG', 'True'))
+
+UPLOAD_DIR: typing.Final = 'src/uploads'
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-UPLOAD_PREFIX = '/uploads'
+UPLOAD_PREFIX: typing.Final = '/uploads'
