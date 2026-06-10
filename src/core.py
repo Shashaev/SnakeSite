@@ -103,13 +103,14 @@ DATA = [
 
 def mock_data() -> None:
     user_dao = src.db.dao.UserDAO(next(src.db.db.get_db()))
+    auth_service = src.auth.get_auth_service()
     first_user = user_dao.select(1)
     if first_user is not None and first_user.name == 'Example':
         return
 
     user_dao.create(src.db.models.UserModel(
         name='Example',
-        password=src.auth.hash_password('Example' * 10),
+        password=auth_service.hash_password('Example' * 10),
     ))
     note_dao = src.db.dao.NoteDAO(next(src.db.db.get_db()))
     for note in DATA:
