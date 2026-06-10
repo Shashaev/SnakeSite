@@ -35,5 +35,23 @@
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         position: fixed;
+        z-index: 1000;
+    }
+
+    a {
+        color: #FEFAE0;
+        text-decoration: none;
+        padding: 15px 18px;
+        border-radius: 20px;
+        transition: background-color 0.2s;
+    }
+
+    a:hover {
+        background-color: #2a3540;
+    }
+
+    a.router-link-active {
+        background-color: #D4A373;
+        color: #141A20;
     }
 </style>

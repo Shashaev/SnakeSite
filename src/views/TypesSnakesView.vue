@@ -14,7 +14,8 @@
         data() {
             return {
                 BASE: import.meta.env.VITE_API_BASE_URL,
-                count: 1,
+                numberNoteInPage: 5,
+                page: 0,
                 cards: [],
                 newCard: {
                     title: '',
@@ -39,11 +40,13 @@
                     console.error('API error:', err);
                 }
             },
-            add_count() {
-                if (this.count === this.cards.length) {
+            nextPage() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if ((this.page + 1) * this.numberNoteInPage >= this.cards.length) {
+                    this.page = 0
                     return;
                 }
-                this.count++;
+                this.page++;
             },
             onFileChange(e) {
                 const file = e.target.files[0];
@@ -69,7 +72,6 @@
                     this.newCard = { title: '', description: '', file: null };
                     this.previewUrl = null;
                     await this.fetchNotes();
-                    this.count = this.cards.length;
                 } catch (err) {
                     console.error('Ошибка при добавлении:', err);
                 }
@@ -87,7 +89,6 @@
                     if (!res.ok) throw new Error();
 
                     await this.fetchNotes();
-                    this.count = this.cards.length;
                 } catch (err) {
                     console.error('Ошибка при добавлении:', err);
                 }
@@ -104,8 +105,8 @@
         <div class="button_menu">
             <button
                 class="main_button"
-                :class="{'dis_btn': count==='max' }"
-                @click="add_count()">{{ this.count !== this.cards.length ? count : 'max' }}
+                :class="{'dis_btn': page==='max' }"
+                @click="nextPage()">Следующая страница
             </button>
         </div>
         <div class="main_block">
@@ -113,7 +114,7 @@
                 <h1>Виды змей и не только</h1>
             </div>
             <div class="cards">
-                <div class="card" v-for="el in cards.slice(0, count)" :key="el.id">
+                <div class="card" v-for="el in cards.slice(page * numberNoteInPage, (page + 1) * numberNoteInPage)" :key="el.id">
                     <img :src="`${BASE}${el.image}`" alt="type_snake">
                     <div class="title_card">
                         <h2>{{ el.title }}</h2>
@@ -164,9 +165,8 @@
 
                     <button class="add-button" @click="submitCard">➕ Добавить карточку</button>
                 </div>
-
-                <div class="end" v-if="count === 'max'">
-                    <p>Больше элементов нет, скоро будут обновления!</p>
+                <div class="end">
+                    <p>Страница: {{ page + 1 }}</p>
                 </div>
             </div>
         </div>

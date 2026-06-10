@@ -143,9 +143,12 @@ h2 {
 }
 
 .end {
+    margin-right: 130px;
+    grid-column: 1 / -1;
+    justify-self: center;
     background-color: #FAEDCD;
     height: 80px;
-    width: 80%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
